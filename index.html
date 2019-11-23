@@ -11,7 +11,6 @@
 <header>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <script src="javascript.js"></script>
 </header>
 <style></style>
 
@@ -27,8 +26,12 @@
                 <div class="content">
                     <h2>Generate your password here!</h2>
                     <div class="col-12">
-                        <div class="row">
-                            <textarea class="col-6 mx-auto border" placeholder="Your secure password here"></textarea>
+                        <div class="row justify-content-center">
+                            <input type="text" id="display" width="100%">
+                        </div>
+                        <br>
+                        <div class="row justify-content-center">
+                            <input type="range" id="slider" min="0" max="128">
                         </div>
                     </div>
                     <br>
@@ -38,11 +41,16 @@
                                 <button type="generate()" class="btn btn-primary">Generate Password</button>
                             </div>
                             <div class="col-4">
-                                <button type="button" class="btn btn-success">Copy to Clipboard</button>
+                                <button type="clipboard" class="btn btn-success">Copy to Clipboard</button>
                             </div>
                         </div>
                     </div>
                     <br>
+                    <div class="passwords">
+                        <h5>Generated Passwords</h5>
+                        <div id="lastPasswords">
+                        </div>
+                    </div>
                 </div>
             </div>
             
@@ -53,11 +61,12 @@
     </div>
     
     
-    
-</body>
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+
 
 </html>

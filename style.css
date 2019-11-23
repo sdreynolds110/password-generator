@@ -3,13 +3,20 @@ body {
 }
 .content {
     border-style: bold;
-    border-block-color: black;
     background-color: rgb(6, 6, 37);
     font-style: italic;
     margin-bottom: 10px;
     margin-top: 10px;
 }
+#display {
+    width: 60%;
+
+}
+#slider {
+    width: 60%;
+}
 h1,
-h2 {
+h2,
+h5 {
     color: white
 }
