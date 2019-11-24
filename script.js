@@ -4,9 +4,9 @@ function generate(){
     var password = "";
 
     for(var i = 0; i <= sliderValues; i++){
-        password = password + values.charAt(Math.floor(Math.random() * Math.floor(values.length - 1)));
+        password += values.charAt(Math.floor(Math.random() * Math.floor(values.length - 1)));
     }
-    document.getElementById("display").value = password;
+    document.getElementById("display").values = password;
 
     document.getElementById("lastPasswords").innerHTML += password + "<br>";
     console.log(password)
